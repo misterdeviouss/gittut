@@ -1,0 +1,14 @@
+Branching
+A seperate version of the code being used to create and test new features
+As a standard practice, we never directly change the master branch
+
+HEAD: The pointer to the current branch where the commits will be made
+
+git checkout -b <<branchname>>
+creates a new branch
+
+git checkout <<branchname>>
+switch to the branch
+
+git merge <<branchname>>
+merge <<branchname's>> changes into the current branch
