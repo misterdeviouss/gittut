@@ -18,11 +18,44 @@ Staging area: Area where files are kept when ready to be committed.
 Changing a file in staging area file will put a copy of it out of staging area where the changes
 are present as a "modified" file
 
-git add . or git add <<filename>>
+git add . or git add <<filename1>> <<filename2>>
 adds untracked file or its changes to the staging area for comitting
 
+git commit -m "message" -d "description"
+Commit the changes or the new file
+always write messages that properly describe your commit in brief
+description can be used to describe your commit in detail
+
 git restore
-removes the file from staging area
+removes the file from staging area and revert changes to files
+
+git log
+shows history of commits
+
+git reset
+resets your git respository to a particular commit
+obtain commit ID from git log, then run git reset <<commitid>> to remove all commits after this
+
+git stash
+Save some changes that you may need in the future but don't want to commit
+
+git stash pop
+Gets all the changes from the stash into your repos
+
+git stash clear
+Remove all changes that you dont need in stash
+
+git stash log
+history of your stashes
 
 
+Linking your git repository to a github respository
 
+git remote add origin <<url>>
+
+remote: you are working with "remote" repos
+origin: the default name of the remote repo
+
+
+git push origin master
+pushes the changes from your local repo to the remote repo
