@@ -1,0 +1,28 @@
+Git is a version control system
+Github is an online website that allows us to host git repositories
+
+Use cases of git:
+1. Tracking changes of your respositories
+2. Participating in open source contribs
+
+git init
+initializes a git repository and creates .git hidden folder (dir /A or ls -a)
+
+git status
+Displays what changes took place and what untracked files are present in the current repository
+
+Untracked files: Files that are currently not been tracked by git in the current repository
+Modified files: Tracked files that have new changes that are not committed
+Staging area: Area where files are kept when ready to be committed.
+
+Changing a file in staging area file will put a copy of it out of staging area where the changes
+are present as a "modified" file
+
+git add . or git add <<filename>>
+adds untracked file or its changes to the staging area for comitting
+
+git restore
+reverts the changes on the modified file to the previous commit
+
+
+
