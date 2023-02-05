@@ -22,7 +22,7 @@ git add . or git add <<filename>>
 adds untracked file or its changes to the staging area for comitting
 
 git restore
-reverts the changes on the modified file to the previous commit
+removes the file from staging area
 
 
 
