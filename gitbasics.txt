@@ -15,24 +15,24 @@ Untracked files: Files that are currently not been tracked by git in the current
 Modified files: Tracked files that have new changes that are not committed
 Staging area: Area where files are kept when ready to be committed.
 
-Changing a file in staging area file will put a copy of it out of staging area where the changes
+Changing a file in staging area file will put a copy of it out of the staging area where the changes
 are present as a "modified" file
 
 git add . or git add <<filename1>> <<filename2>>
 adds untracked file or its changes to the staging area for comitting
 
-git commit -m "message" -d "description"
+git commit -m "message" -m "description"
 Commit the changes or the new file
 always write messages that properly describe your commit in brief
 description can be used to describe your commit in detail
 
-git restore
+git restore <<filename>>
 removes the file from staging area and revert changes to files
 
 git log
 shows history of commits
 
-git reset
+git reset <<commitID>>
 resets your git respository to a particular commit
 obtain commit ID from git log, then run git reset <<commitid>> to remove all commits after this
 
@@ -52,10 +52,34 @@ history of your stashes
 Linking your git repository to a github respository
 
 git remote add origin <<url>>
+git remote set-url origin <<url>> changes the URL of remote repo
 
 remote: you are working with "remote" repos
 origin: the default name of the remote repo
 
 git push origin master
-pushes the changes from your local repo to the remote repo
-it will ask for authentication
+pushes the changes from your local repo to the remote repo in the branch mentioned
+it will ask for authentication via username/pass or browser or tokens
+
+https://www.youtube.com/watch?v=LIHIRBz5ZXk&ab_channel=TechJourneywithAnna
+git origin vs remote
+
+Forking
+Create a git repository by copying another git repository for own use
+This is usually done when you cannot clone another orgnz/person's git repo and want to suggest changes to it
+You can git clone this now
+
+Upstream
+It is the original repo URL from where the repo was forked from
+git remote add upstream <<url>>
+
+Pull request
+When you fork a git project and make some changes to it, you would wanna get those changes
+to the upstream branch. For that, you make a "pull request" to the developer so that
+your changes enter the upstream branch.
+
+
+git fetch --all --prune: brings all changes in upstream main branch into your code
+git reset --hard: fixes the changes
+
+or just git pull upstream
