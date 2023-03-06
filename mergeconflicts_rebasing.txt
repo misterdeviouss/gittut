@@ -1,0 +1,22 @@
+Squashing commits
+You can combine multiple small commits in one commit by squashing them
+copy the latest commit ID
+
+git rebase -i <<commitid>> or git rebase -i HEAD~<<n>> here n is back steps to a commit 
+now "pick" or "s" (squash) commits
+esc+ :x
+add a brief message
+your commits are now squashed
+
+
+Merge conflicts: Two changes on the same line/file by different devs
+Use vscode to solve. Only one change will be expected. Commit your change to notify
+the other dev.
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+
+Renaming branch
+git branch -m <oldname> <newname> (use -M if only changing cases)
+git push origin -u newname
+git push origin --delete oldname
