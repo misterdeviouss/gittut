@@ -1,3 +1,11 @@
+Reverting commits
+git revert <<commit id>>
+Removes changes of a certain commit
+You will have to commit the removal again as another commit
+
+All changes of a commit
+git diff-tree -r <<commit id>>
+
 Squashing commits
 You can combine multiple small commits in one commit by squashing them
 copy the latest commit ID

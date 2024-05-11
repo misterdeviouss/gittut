@@ -5,6 +5,9 @@ Use cases of git:
 1. Tracking changes of your respositories
 2. Participating in open source contribs
 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
 git init
 initializes a git repository and creates .git hidden folder (dir /A or ls -a)
 
@@ -32,9 +35,15 @@ removes the file from staging area and revert changes to files
 git log
 shows history of commits
 
+git log --oneline
+Shorter history of commits
+
 git reset <<commitID>>
 resets your git respository to a particular commit
 obtain commit ID from git log, then run git reset <<commitid>> to remove all commits after this
+
+git diff <<file>> or nothing
+Show all changes in a file since last commit
 
 git stash
 Save some changes that you may need in the future but don't want to commit
