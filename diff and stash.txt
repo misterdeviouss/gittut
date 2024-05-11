@@ -1,0 +1,14 @@
+git stash
+Save some changes that you may need in the future but don't want to commit
+
+git stash pop
+Gets all the changes from the stash into your repos
+
+git stash clear
+Remove all changes that you dont need in stash
+
+git stash log
+history of your stashes
+
+git diff <<file>> or nothing
+Show all changes in a file since last commit

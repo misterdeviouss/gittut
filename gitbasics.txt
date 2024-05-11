@@ -46,8 +46,6 @@ git reset <<commitID>>
 resets your git respository to a particular commit
 obtain commit ID from git log, then run git reset <<commitid>> to remove all commits after this
 
-git diff <<file>> or nothing
-Show all changes in a file since last commit
 
 
 
@@ -55,19 +53,6 @@ Show all changes in a file since last commit
 Helps you to ignore certain filetypes in your folder. It guarantees that these filetypes won't ever be commited (even accidently)
 Just write filename/folder in each line of gitignore file
 You can use a gitignore generator online to get pre configured gitignore files
-
-git stash
-Save some changes that you may need in the future but don't want to commit
-
-git stash pop
-Gets all the changes from the stash into your repos
-
-git stash clear
-Remove all changes that you dont need in stash
-
-git stash log
-history of your stashes
-
 
 
 
