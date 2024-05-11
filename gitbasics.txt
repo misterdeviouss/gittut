@@ -30,6 +30,7 @@ git commit -m "message" -m "description"
 Commit the changes or the new file
 always write messages that properly describe your commit in brief
 description can be used to describe your commit in detail
+Do atomic commits: one commit = one bugfix or one feature or one upgrade
 Every commit depends on its previous commit
 
 git restore <<filename>>

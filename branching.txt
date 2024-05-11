@@ -1,17 +1,17 @@
 Branching
-A seperate version of the code being used to create and test new features
-As a standard practice, we never directly change the master branch
+A seperate version of the code being used to create and test new features. It is like a seperate timeline.
+As a standard practice, we never directly change the master branch. We build features in a branch and then merge it with the master branch.
 
 HEAD: The pointer to the current branch where the commits will be made
 
-git checkout -b <<branchname>>
-creates a new branch
+git checkout -b branchname OR git branch branchname
+creates a new branch. Checkout directly moves you to the branch.
 
-git branch -d <<branchname>>
+git branch -d branchname
 drop a branch
 
-git checkout <<branchname>>
+git checkout branchname
 switch to the branch
 
-git merge <<branchname>>
-merge <<branchname's>> changes into the current branch
+git merge branchname
+merge branchname's changes into the current branch
