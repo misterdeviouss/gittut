@@ -12,6 +12,8 @@ creates a new branch. Checkout directly moves you to the branch.
 
 git branch -d branchname
 delete a branch
+git push origin -d hiteshbranch
+delete branch from remote repo
 
 git checkout branchname
 switch to the branch
@@ -20,3 +22,7 @@ git merge branchname
 merge branchname's changes into the current branch
 To merge into master, switch to master and git merge branchname
 
+Merge conflicts: Two changes on the same line/file by different devs.
+See image for resolving.
+Use vscode to solve or change the file and save it. Only one change will be expected.
+You need to commit this as well (merge conflict is a merge that needs a commit)
