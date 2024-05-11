@@ -7,6 +7,8 @@ Use cases of git:
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+Now when you push or commit, you will be asked for your git account
+Your git config is present in home folder
 
 git init
 initializes a git repository and creates .git hidden folder (dir /A or ls -a)
@@ -28,6 +30,7 @@ git commit -m "message" -m "description"
 Commit the changes or the new file
 always write messages that properly describe your commit in brief
 description can be used to describe your commit in detail
+Every commit depends on its previous commit
 
 git restore <<filename>>
 removes the file from staging area and revert changes to files
@@ -45,6 +48,13 @@ obtain commit ID from git log, then run git reset <<commitid>> to remove all com
 git diff <<file>> or nothing
 Show all changes in a file since last commit
 
+
+
+.gitignore file
+Helps you to ignore certain filetypes in your folder. It guarantees that these filetypes won't ever be commited (even accidently)
+Just write filename/folder in each line of gitignore file
+You can use a gitignore generator online to get pre configured gitignore files
+
 git stash
 Save some changes that you may need in the future but don't want to commit
 
@@ -56,6 +66,8 @@ Remove all changes that you dont need in stash
 
 git stash log
 history of your stashes
+
+
 
 
 Linking your git repository to a github respository
@@ -73,6 +85,8 @@ it will ask for authentication via username/pass or browser or tokens
 https://www.youtube.com/watch?v=LIHIRBz5ZXk&ab_channel=TechJourneywithAnna
 git origin vs remote
 
+
+
 Forking
 Create a git repository by copying another git repository for own use
 This is usually done when you cannot clone another orgnz/person's git repo and want to suggest changes to it
@@ -86,7 +100,6 @@ Pull request
 When you fork a git project and make some changes to it, you would wanna get those changes
 to the upstream branch. For that, you make a "pull request" to the developer so that
 your changes enter the upstream branch.
-
 
 git fetch --all --prune: brings all changes in upstream main branch into your code
 git reset --hard: fixes the changes
