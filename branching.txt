@@ -1,6 +1,9 @@
 Branching
 A seperate version of the code being used to create and test new features. It is like a seperate timeline.
 As a standard practice, we never directly change the master branch. We build features in a branch and then merge it with the master branch.
+On the remote repo (github), your branch resides as upstream branch
+
+git push --set-upstream origin hiteshbranch
 
 HEAD: The pointer to the current branch where the commits will be made
 
@@ -15,3 +18,5 @@ switch to the branch
 
 git merge branchname
 merge branchname's changes into the current branch
+To merge into master, switch to master and git merge branchname
+
