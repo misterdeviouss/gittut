@@ -8,7 +8,7 @@ git checkout -b branchname OR git branch branchname
 creates a new branch. Checkout directly moves you to the branch.
 
 git branch -d branchname
-drop a branch
+delete a branch
 
 git checkout branchname
 switch to the branch
