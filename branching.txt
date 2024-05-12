@@ -26,3 +26,9 @@ Merge conflicts: Two changes on the same line/file by different devs.
 See image for resolving.
 Use vscode to solve or change the file and save it. Only one change will be expected.
 You need to commit this as well (merge conflict is a merge that needs a commit)
+
+
+Renaming branch
+git branch -m <oldname> <newname> (use -M if only changing cases)
+git push origin -u newname
+git push origin --delete oldname

@@ -18,8 +18,3 @@ your commits are now squashed
 
 https://education.github.com/git-cheat-sheet-education.pdf
 
-
-Renaming branch
-git branch -m <oldname> <newname> (use -M if only changing cases)
-git push origin -u newname
-git push origin --delete oldname
