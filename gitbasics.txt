@@ -23,7 +23,7 @@ Staging area: Area where files are kept when ready to be committed.
 Changing a file in staging area file will put a copy of it out of the staging area where the changes
 are present as a "modified" file
 
-git add . or git add <<filename1>> <<filename2>>
+git add . or git add filename1 filename2
 adds untracked file or its changes to the staging area for comitting
 
 git commit -m "message" -m "description"
@@ -33,7 +33,7 @@ description can be used to describe your commit in detail
 Do atomic commits: one commit = one bugfix or one feature or one upgrade
 Every commit depends on its previous commit
 
-git restore <<filename>>
+git restore filename
 removes the file from staging area and revert changes to files
 
 git log
@@ -42,9 +42,9 @@ shows history of commits
 git log --oneline
 Shorter history of commits
 
-git reset <<commitID>>
+git reset commitID
 resets your git respository to a particular commit
-obtain commit ID from git log, then run git reset <<commitid>> to remove all commits after this
+obtain commit ID from git log, then run git reset commitid to remove all commits after this
 
 
 
@@ -58,8 +58,8 @@ You can use a gitignore generator online to get pre configured gitignore files
 
 Linking your git repository to a github respository
 
-git remote add origin <<url>>
-git remote set-url origin <<url>> changes the URL of remote repo
+git remote add origin url
+git remote set-url origin url changes the URL of remote repo
 
 remote: you are working with "remote" repos
 origin: the default name of the remote repo
@@ -80,7 +80,7 @@ You can git clone this now
 
 Upstream
 It is the original repo URL from where the repo was forked from
-git remote add upstream <<url>>
+git remote add upstream url
 
 Pull request
 When you fork a git project and make some changes to it, you would wanna get those changes
