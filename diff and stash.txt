@@ -1,5 +1,21 @@
+git diff <<file>> or nothing
+Show all changes in a file since last commit/stage
+
+git diff --staged ==> diff from staged file for all files
+git diff commithash ==> diff from a certain commit in timeline
+git diff commithash1 commithash2 ==> diff two commithash1
+git diff branch1 branch2 ==> diff from two branches
+
+
 git stash
-Save some changes that you may need in the future but don't want to commit
+Save some changes that you may need in the future but don't 
+want to commit before switching to another branch
+Stashes are not limited to branches. The changes can be popped
+in other branches as well.
+
+git stash list
+git stash apply stashnumber
+
 
 git stash pop
 Gets all the changes from the stash into your repos
@@ -9,6 +25,3 @@ Remove all changes that you dont need in stash
 
 git stash log
 history of your stashes
-
-git diff <<file>> or nothing
-Show all changes in a file since last commit

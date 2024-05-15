@@ -1,3 +1,11 @@
+move Heads
+git checkout commithash
+git switch master ==> reattach Head
+git checkout Head~2 ==> Move HEAD 2 commits in past
+
+git reflog ==> Undo's your last move among commits
+
+
 Reverting commits
 git revert <<commit id>>
 Removes changes of a certain commit
