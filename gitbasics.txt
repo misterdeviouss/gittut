@@ -59,7 +59,7 @@ You can use a gitignore generator online to get pre configured gitignore files
 Linking your git repository to a github respository
 
 git remote add origin url
-git remote set-url origin url changes the URL of remote repo
+git remote set-url origin url ==> changes the URL of remote repo
 
 remote: you are working with "remote" repos
 origin: the default name of the remote repo
@@ -91,3 +91,7 @@ git fetch --all --prune: brings all changes in upstream main branch into your co
 git reset --hard: fixes the changes
 
 or just git pull upstream
+
+
+or git fetch
+and git merge

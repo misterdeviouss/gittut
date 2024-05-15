@@ -18,6 +18,24 @@ Squashing commits
 You can combine multiple small commits in one commit by squashing them
 copy the latest commit ID
 
+
+Rebasing
+Rewrites history to make commits appear as if the branch was never made.
+It is actually a merge command which merges the commits as well.
+It is used when majority of the past commits are merging commits only and you want
+the commit history to look cleaner.
+Always rebase from the branch.
+It deletes the branch as well.
+
+git rebase master
+
+If there is a merge conflict, resolve it first
+then git add the files (move them to staging area)
+and git rebase --continue ==> to continue the rebase
+
+git rebase --abort ==> stop the rebase
+
+
 git rebase -i <<commitid>> or git rebase -i HEAD~<<n>> here n is back steps to a commit 
 now "pick" or "s" (squash) commits
 esc+ :x
