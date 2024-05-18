@@ -73,25 +73,13 @@ git origin vs remote
 
 
 
-Forking
-Create a git repository by copying another git repository for own use
-This is usually done when you cannot clone another orgnz/person's git repo and want to suggest changes to it
-You can git clone this now
 
 Upstream
 It is the original repo URL from where the repo was forked from
 git remote add upstream url
 
-Pull request
-When you fork a git project and make some changes to it, you would wanna get those changes
-to the upstream branch. For that, you make a "pull request" to the developer so that
-your changes enter the upstream branch.
-
 git fetch --all --prune: brings all changes in upstream main branch into your code
 git reset --hard: fixes the changes
-
 or just git pull upstream
-
-
 or git fetch
 and git merge

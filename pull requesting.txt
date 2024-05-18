@@ -1,0 +1,15 @@
+Forking
+Create a git repository by copying another git repository for own use
+This is usually done when you cannot clone another orgnz/person's git repo and want to suggest changes to it
+You can git clone this now since it is added to your account
+See image for workflow
+
+Pull request
+When you fork a git project and make some changes to it, you would wanna get those changes
+to the upstream branch. For that, you make a "pull request" to the developer so that
+your changes enter the upstream branch.
+
+Fork the codebase from github.
+
+Do your contribution in a branch. Push it to github. Now compare and pull request.
+Make a very good message and description. Impress the OG developer with your request.
